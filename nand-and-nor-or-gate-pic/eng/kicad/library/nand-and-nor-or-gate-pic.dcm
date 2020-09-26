@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PIC16F15313-IP
+D 2kW Flash, 25B SRAM, PDIP8
+K FLASH-Based 8-Bit CMOS Microcontroller
+F http://ww1.microchip.com/downloads/en/DeviceDoc/40001897A.pdf
+$ENDCMP
+#
+#End Doc Library
