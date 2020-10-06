@@ -20,7 +20,15 @@ Please email picavrgates@jigglesoft.co.uk regarding this repository.
 
 ## Logic Gate Index
 
-| Name | MCU | Diagram | Description |
-| ---- | --- | ------- | ----------- |
-| [nand-and-nor-or-gate-pic](nand-and-nor-or-gate-pic) | PIC16F15313 | ![Gate Diagram](nand-and-nor-or-gate-pic/doc/nand-and-nor-or-gate-pic-diagram.png) | 2 input with single output for each of the NAND, AND, NOR, OR logic functions. | 
+| Name | MCU | Diagram | Description | Firmware | KiCAD Library |
+| ---- | --- | ------- | ----------- | -------- | ------------- |
+| [nand-and-nor-or-gate-pic](nand-and-nor-or-gate-pic) | PIC16F15313 | ![Gate Diagram](nand-and-nor-or-gate-pic/doc/nand-and-nor-or-gate-pic-diagram.png) | 2 input with single output for each of the NAND, AND, NOR, OR logic functions. | [Goto](nand-and-nor-or-gate-pic/src/MPLABXProjects/nand-and-nor-or-gate-pic-mcc.X) | [Goto] (nand-and-nor-or-gate-pic/eng/kicad/library) |
+
+
+## Other Project
+
+| Name | MCU | Diagram | Description | Firmware | KiCAD Library |
+| ---- | --- | ------- | ----------- | -------- | ------------- |
+| [test-clock-signal-gen-pic](ntest-clock-signal-gen-pic) | PIC16F15313 | ![Diagram](test-clock-signal-gen-pic/doc/test-clock-signal-gen-pic-diagram.png) | Output the following clock signals 32MHz, 1MHz, 500KHz, 250KHz, 125MHz, and 31.25KHz | [Goto](test-clock-signal-gen-pic/src/MPLABXProjects/test-clock-signal-gen-pic-mcc.X) | [Goto] (test-clock-signal-gen-pic/eng/kicad/library) |
+
 
