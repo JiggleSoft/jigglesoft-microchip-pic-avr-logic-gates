@@ -62,7 +62,7 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0x30;
+    TRISA = 0x10;
 
     /**
     ANSELx registers
@@ -96,9 +96,9 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
-    CLCIN0PPS = 0x05;   //RA5->CLC3:CLCIN0;    
-    RA3PPS = 0x04;   //RA3->CLC4:CLC4OUT;    
-    CLCIN1PPS = 0x04;   //RA4->CLC3:CLCIN1;    
+    CLCIN0PPS = 0x04;   //RA4->CLC3:CLCIN0;    
+    RA5PPS = 0x04;   //RA5->CLC4:CLC4OUT;    
+    CLCIN1PPS = 0x03;   //RA3->CLC3:CLCIN1;    
     RA1PPS = 0x02;   //RA1->CLC2:CLC2OUT;    
     RA2PPS = 0x03;   //RA2->CLC3:CLC3OUT;    
     RA0PPS = 0x01;   //RA0->CLC1:CLC1OUT;    
