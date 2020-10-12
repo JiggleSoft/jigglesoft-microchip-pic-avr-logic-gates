@@ -59,16 +59,16 @@ void CLC2_Initialize(void)
 {
     // Set the CLC2 to the options selected in the User Interface
 
-    // LC2G1POL inverted; LC2G2POL not_inverted; LC2G3POL not_inverted; LC2G4POL not_inverted; LC2POL not_inverted; 
-    CLC2POL = 0x01;
-    // LC2D1S CLCIN2 (CLCIN2PPS); 
-    CLC2SEL0 = 0x02;
+    // LC2G1POL inverted; LC2G2POL inverted; LC2G3POL not_inverted; LC2G4POL not_inverted; LC2POL not_inverted; 
+    CLC2POL = 0x03;
+    // LC2D1S CLCIN0 (CLCIN0PPS); 
+    CLC2SEL0 = 0x00;
     // LC2D2S CLCIN1 (CLCIN1PPS); 
     CLC2SEL1 = 0x01;
     // LC2D3S CLCIN0 (CLCIN0PPS); 
     CLC2SEL2 = 0x00;
-    // LC2D4S CLCIN0 (CLCIN0PPS); 
-    CLC2SEL3 = 0x00;
+    // LC2D4S CLCIN1 (CLCIN1PPS); 
+    CLC2SEL3 = 0x01;
     // LC2G1D3N disabled; LC2G1D2N enabled; LC2G1D4N disabled; LC2G1D1T disabled; LC2G1D3T disabled; LC2G1D2T disabled; LC2G1D4T disabled; LC2G1D1N enabled; 
     CLC2GLS0 = 0x05;
     // LC2G2D2N disabled; LC2G2D1N disabled; LC2G2D4N disabled; LC2G2D3N disabled; LC2G2D2T disabled; LC2G2D1T disabled; LC2G2D4T disabled; LC2G2D3T disabled; 

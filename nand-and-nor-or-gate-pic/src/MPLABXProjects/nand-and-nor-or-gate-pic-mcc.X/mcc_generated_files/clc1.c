@@ -59,16 +59,16 @@ void CLC1_Initialize(void)
 {
     // Set the CLC1 to the options selected in the User Interface
 
-    // LC1G1POL not_inverted; LC1G2POL not_inverted; LC1G3POL not_inverted; LC1G4POL not_inverted; LC1POL not_inverted; 
-    CLC1POL = 0x00;
+    // LC1G1POL not_inverted; LC1G2POL inverted; LC1G3POL not_inverted; LC1G4POL not_inverted; LC1POL not_inverted; 
+    CLC1POL = 0x02;
     // LC1D1S CLCIN0 (CLCIN0PPS); 
     CLC1SEL0 = 0x00;
     // LC1D2S CLCIN1 (CLCIN1PPS); 
     CLC1SEL1 = 0x01;
     // LC1D3S CLCIN0 (CLCIN0PPS); 
     CLC1SEL2 = 0x00;
-    // LC1D4S CLCIN0 (CLCIN0PPS); 
-    CLC1SEL3 = 0x00;
+    // LC1D4S CLCIN1 (CLCIN1PPS); 
+    CLC1SEL3 = 0x01;
     // LC1G1D3N disabled; LC1G1D2N enabled; LC1G1D4N disabled; LC1G1D1T disabled; LC1G1D3T disabled; LC1G1D2T disabled; LC1G1D4T disabled; LC1G1D1N enabled; 
     CLC1GLS0 = 0x05;
     // LC1G2D2N disabled; LC1G2D1N disabled; LC1G2D4N disabled; LC1G2D3N disabled; LC1G2D2T disabled; LC1G2D1T disabled; LC1G2D4T disabled; LC1G2D3T disabled; 

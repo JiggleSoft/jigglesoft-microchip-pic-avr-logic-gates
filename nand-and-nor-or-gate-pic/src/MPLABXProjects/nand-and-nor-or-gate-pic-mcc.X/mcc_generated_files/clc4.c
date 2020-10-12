@@ -59,16 +59,16 @@ void CLC4_Initialize(void)
 {
     // Set the CLC4 to the options selected in the User Interface
 
-    // LC4G1POL not_inverted; LC4G2POL not_inverted; LC4G3POL not_inverted; LC4G4POL not_inverted; LC4POL not_inverted; 
-    CLC4POL = 0x00;
+    // LC4G1POL not_inverted; LC4G2POL inverted; LC4G3POL not_inverted; LC4G4POL not_inverted; LC4POL not_inverted; 
+    CLC4POL = 0x02;
     // LC4D1S CLCIN0 (CLCIN0PPS); 
     CLC4SEL0 = 0x00;
     // LC4D2S CLCIN1 (CLCIN1PPS); 
     CLC4SEL1 = 0x01;
     // LC4D3S CLCIN0 (CLCIN0PPS); 
     CLC4SEL2 = 0x00;
-    // LC4D4S CLCIN0 (CLCIN0PPS); 
-    CLC4SEL3 = 0x00;
+    // LC4D4S CLCIN1 (CLCIN1PPS); 
+    CLC4SEL3 = 0x01;
     // LC4G1D3N disabled; LC4G1D2N disabled; LC4G1D4N disabled; LC4G1D1T enabled; LC4G1D3T disabled; LC4G1D2T enabled; LC4G1D4T disabled; LC4G1D1N disabled; 
     CLC4GLS0 = 0x0A;
     // LC4G2D2N disabled; LC4G2D1N disabled; LC4G2D4N disabled; LC4G2D3N disabled; LC4G2D2T disabled; LC4G2D1T disabled; LC4G2D4T disabled; LC4G2D3T disabled; 
