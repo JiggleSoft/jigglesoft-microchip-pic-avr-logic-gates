@@ -20,9 +20,9 @@ Microchip PIC16F15313
 | Pin | Signal | Direction | Notes    |
 | --- | ------ | --------- | -------- |
 |  1  | Vdd    | Power     | +5V Nom. |
-|  2  | A      | Input     | A        |
-|  3  | B      | Input     | B        |
-|  4  | OR     | Output    | A + B    |
+|  2  | OR     | Output    | A + B    |
+|  3  | A      | Input     | A        |
+|  4  | B      | Input     | B        |
 |  5  | NOR    | Output    | -(A + B) |
 |  6  | AND    | Output    | A & B    |
 |  7  | NAND   | Output    | -(A & B) |
