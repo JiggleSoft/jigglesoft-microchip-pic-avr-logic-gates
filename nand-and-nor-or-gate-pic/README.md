@@ -31,10 +31,15 @@ Microchip PIC16F15313
 
 # Logic Gate Diagram
 
-![Logic Gate Diagram Small](doc/nand-and-nor-or-gate-pic-diagram.png) [Logic Gate Diagram](doc/nand-and-nor-or-gate-pic-diagram.pdf)
+![Logic Gate Diagram](doc/nand-and-nor-or-gate-pic-diagram.png)\
+[PDF](doc/nand-and-nor-or-gate-pic-diagram.pdf)
 
 
 # Logic Gate Firmware
 
-[Logic Gate Firmware](src/MPLABXProjects/nand-and-nor-or-gate-pic-mcc.X/dist/default/production)
+[Hex File](src/MPLABXProjects/nand-and-nor-or-gate-pic-mcc.X/dist/default/production)
 
+
+# KiCAD Library
+
+[KiCAD Library](eng/kicad/library)
