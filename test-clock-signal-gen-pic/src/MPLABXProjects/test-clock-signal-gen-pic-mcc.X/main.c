@@ -43,6 +43,15 @@
 
 #include "mcc_generated_files/mcc.h"
 
+void IOCAF3_MyInterruptHandler(void)
+{
+            asm("movlw  0x00");
+        asm("movwf  PORTA");
+        asm("stay_in_int:");
+        asm("btfsc   PORTA,3");
+        asm("bra    stay_in_int");
+}
+
 /*
                          Main application
  */
@@ -51,14 +60,16 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
 
+    IOCAF3_SetInterruptHandler(IOCAF3_MyInterruptHandler);
+    
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -68,8 +79,12 @@ void main(void)
 
     while (1)
     {
-
         asm("movlw  0x00");
+
+        asm("stay_in_off:");
+        asm("btfsc  PORTA,3");
+        asm("bra    stay_in_off");
+        
         asm("loop:");
         asm("movwf  PORTA");
         asm("addlw  0x01");

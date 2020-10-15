@@ -50,7 +50,7 @@
 #pragma config FEXTOSC = OFF    // External Oscillator mode selection bits->Oscillator not enabled
 #pragma config RSTOSC = HFINT32    // Power-up default value for COSC bits->HFINTOSC with OSCFRQ= 32 MHz and CDIV = 1:1
 #pragma config CLKOUTEN = ON    // Clock Out Enable bit->CLKOUT function is enabled; FOSC/4 clock appears at OSC2
-#pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
+#pragma config CSWEN = OFF    // Clock Switch Enable bit->The NOSC and NDIV bits cannot be changed by user software
 #pragma config FCMEN = OFF    // Fail-Safe Clock Monitor Enable bit->FSCM timer disabled
 
 // CONFIG2

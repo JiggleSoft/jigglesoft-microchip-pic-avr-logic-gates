@@ -72,12 +72,12 @@ void OSCILLATOR_Initialize(void)
 
 void PMD_Initialize(void)
 {
-    // CLKRMD CLKR disabled; SYSCMD SYSCLK disabled; FVRMD FVR disabled; IOCMD IOC disabled; NVMMD NVM disabled; 
-    PMD0 = 0xC7;
+    // CLKRMD CLKR disabled; SYSCMD SYSCLK disabled; FVRMD FVR disabled; IOCMD IOC enabled; NVMMD NVM disabled; 
+    PMD0 = 0xC6;
     // TMR0MD TMR0 disabled; TMR1MD TMR1 disabled; TMR2MD TMR2 disabled; NCOMD DDS(NCO) disabled; 
     PMD1 = 0x87;
-    // ZCDMD ZCD enabled; CMP1MD CMP1 enabled; ADCMD ADC disabled; DAC1MD DAC1 enabled; 
-    PMD2 = 0x20;
+    // ZCDMD ZCD disabled; CMP1MD CMP1 disabled; ADCMD ADC disabled; DAC1MD DAC1 disabled; 
+    PMD2 = 0x63;
     // CCP2MD CCP2 disabled; CCP1MD CCP1 disabled; PWM4MD PWM4 disabled; PWM3MD PWM3 disabled; PWM6MD PWM6 disabled; PWM5MD PWM5 disabled; 
     PMD3 = 0x3F;
     // CWG1MD CWG1 disabled; MSSP1MD MSSP1 disabled; UART1MD EUSART disabled; 
